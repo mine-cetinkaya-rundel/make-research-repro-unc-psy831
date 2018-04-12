@@ -8,7 +8,7 @@ output:
     widescreen: yes
 ---
 
-```{r echo=FALSE, message=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE}
 library(tidyverse)
 library(broom)
 options(show.signif.stars=FALSE)
@@ -254,6 +254,8 @@ Well, it's R + Markdown:
 
 - Rendering of R code to produce output and plots
 
+- Ability to include LaTeX: $\hat{y} = \beta_0 + \beta_1 \times x$
+
 ## Sample R Markdown document
 
 <img src="img/rmarkdown.png" alt="rmarkdown" style="width:1000px">
@@ -352,6 +354,10 @@ ggplot(data = big5_teen, aes(x = neuroticism, y = extraversion, color = gender))
   geom_smooth(method = "lm")
 ```
 
+
+
+
+
 # 3. Version control
 
 ## What is version control?
@@ -365,7 +371,6 @@ Version control is a system that records changes to a file or set of files over 
 </center>
 
 <font size="3">Source: Piled Higher and Deeper by Jorge Cham, http://www.phdcomics.com.</font>
-
 
 ## Good
 
@@ -396,7 +401,8 @@ Everytime you make a save, you zip the entire directory that your project files 
 <img src="img/repo.png" width="600px" />
 </center>
 
-<font size="3">Source: https://github.com/mine-cetinkaya-rundel/2016-01-11-reproducible-research-unc/.</font>
+<font size="3">Source: https://github.com/mine-cetinkaya-rundel/make-research-repro-unc-psy831</font>
+
 
 ## How does a version control system work? {.smaller}
 
@@ -458,7 +464,7 @@ Train new researchers who don’t have any other workflow
 
 ## Resources
 
-- Slides and repository for this talk: https://github.com/mine-cetinkaya-rundel/2016-01-11-reproducible-research-unc/
+- Slides and repository for this talk: https://github.com/mine-cetinkaya-rundel/make-research-repro-unc-psy831
 
 - R Markdown: http://rmarkdown.rstudio.com/
 
@@ -467,7 +473,3 @@ Train new researchers who don’t have any other workflow
 - Try Git: https://try.github.io
 
 - Reproducible Science Curriculum (2 day workshop): https://github.com/Reproducible-Science-Curriculum/
-
-## Latex
-
-$\hat{y} = \beta_0 + \beta_1 \times x$
