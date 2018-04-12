@@ -325,6 +325,15 @@ m_ext_age <- lm(extraversion ~ neuroticism * gender, data = big5)
 tidy(m_ext_age)
 ```
 
+## Grab coefficients
+
+```{r}
+tidy_m <- tidy(m_ext_age)
+```
+
+Slope for neuroticism is `r tidy_m$estimate[2]`.
+
+
 ## Plot extraversion vs. age and gender {.smaller}
 
 ```{r message=FALSE, fig.height=4}
